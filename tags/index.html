@@ -11,7 +11,7 @@
 
     <title>
         
-        charlie的博客 | charlie&#39;s Blog
+        Tags - charlie的博客 | charlie&#39;s Blog
         
     </title>
 
@@ -54,13 +54,13 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
                 </a>
             </li>
-            <li >
+            <li  class=active >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -112,142 +112,127 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        
-<div class="post-preview-container" style="min-height: 576px">
+        <div id='tag_cloud' class="tags">
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/item/">
-                <h3>
-                    项目中的注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#items" title="items">items</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
+    <a href="#items" title="items" rel="1">items</a>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/first/">
-                <h3>
-                    first
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
+    <a href="#css3" title="css3" rel="1">css3</a>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/html css/">
-                <h3>
-                    css3属性记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#css3" title="css3">css3</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
+    <a href="#jquery" title="jquery" rel="1">jquery</a>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/jquery/">
-                <h3>
-                    jquery相关注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#jquery" title="jquery">jquery</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
+    <a href="#javascript" title="javascript" rel="1">javascript</a>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/js/">
-                <h3>
-                    js相关记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#javascript" title="javascript">javascript</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
+    <a href="#swiper" title="swiper" rel="1">swiper</a>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/json/">
-                <h3>
-                    有关json的处理
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
+</div>
+
+<!-- 标签列表 -->
+
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="items">
+                    <span class="tag-text">items</span>
+                </span>
     
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
     <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/swiper/">
-                <h3>
-                    swiper在使用中需要注意的问题及解决方式
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#swiper" title="swiper">swiper</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+        <a href="/2018/05/18/item/">
+            <h2 class="post-title">
+                项目中的注意事项
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
 </div>
-<ul class="pager">
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="css3">
+                    <span class="tag-text">css3</span>
+                </span>
     
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/2018/05/18/html css/">
+            <h2 class="post-title">
+                css3属性记录
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
     
-</ul>
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="jquery">
+                    <span class="tag-text">jquery</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/2018/05/18/jquery/">
+            <h2 class="post-title">
+                jquery相关注意事项
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="javascript">
+                    <span class="tag-text">javascript</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/2018/05/18/js/">
+            <h2 class="post-title">
+                js相关记录
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="swiper">
+                    <span class="tag-text">swiper</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+    <div class="post-preview">
+        <a href="/2018/05/18/swiper/">
+            <h2 class="post-title">
+                swiper在使用中需要注意的问题及解决方式
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    </div>
+    
+</div>
 
     </div>
 </div>

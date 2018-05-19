@@ -54,7 +54,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -66,7 +66,7 @@
                     <span>标签</span>
                 </a>
             </li>
-            <li >
+            <li  class=active >
                 <a href="/archive">
                     <i class="iconfont icon-guidang2"></i>
                     <span>存档</span>
@@ -113,142 +113,128 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/item/">
-                <h3>
-                    项目中的注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#items" title="items">items</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/first/">
-                <h3>
-                    first
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/html css/">
-                <h3>
-                    css3属性记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#css3" title="css3">css3</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/jquery/">
-                <h3>
-                    jquery相关注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#jquery" title="jquery">jquery</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/js/">
-                <h3>
-                    js相关记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#javascript" title="javascript">javascript</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/json/">
-                <h3>
-                    有关json的处理
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/swiper/">
-                <h3>
-                    swiper在使用中需要注意的问题及解决方式
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#swiper" title="swiper">swiper</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
-</ul>
 
+
+<!-- 归档列表 -->
+
+<div class="archives-container">
+
+<div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
+                    <span class="tag-text">2018</span>
+                </span>
+    <ul>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/swiper/">
+                        <span>
+                            swiper在使用中需要注意的问题及解决方式
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/json/">
+                        <span>
+                            有关json的处理
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/js/">
+                        <span>
+                            js相关记录
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/jquery/">
+                        <span>
+                            jquery相关注意事项
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/html css/">
+                        <span>
+                            css3属性记录
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/first/">
+                        <span>
+                            first
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li >
+            <span>05-18</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/05/18/item/">
+                        <span>
+                            项目中的注意事项
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+
+    </ul>
+</div>
+
+</div>
     </div>
 </div>
 

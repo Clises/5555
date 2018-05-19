@@ -11,7 +11,7 @@
 
     <title>
         
-        charlie的博客 | charlie&#39;s Blog
+        About - charlie的博客 | charlie&#39;s Blog
         
     </title>
 
@@ -54,7 +54,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -72,7 +72,7 @@
                     <span>存档</span>
                 </a>
             </li>
-            <li >
+            <li  class=active >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
                     <span>关于</span>
@@ -113,141 +113,25 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
+<div class="post-content ">
+    <blockquote>
+<p>我们毕业了，来后个照留作纪念吧！<br>又到毕业季，对于大大小小的校园来说，这个季节里最靓丽的风景不是图书馆里的宁静，不是运动场上的拼杀，不是礼堂里的音乐会，也不是讲堂里的激情飞扬，更不是树荫下花草间的卿卿我我，而是身着不同样式的服装，摆出各式“pose”，变换着花样拍摄毕业照的场景。<br>这样让人感动的唯美场景意味着人生又一次的成长，又一次的告别，又一次的转折，又一个的结束和又一个新的即将开始……。</p>
+</blockquote>
+<p style="text-align:right;"><br>    —— 毕业了，真的要结束了。<br></p>
     
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/item/">
-                <h3>
-                    项目中的注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#items" title="items">items</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+        <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/first/">
-                <h3>
-                    first
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/html css/">
-                <h3>
-                    css3属性记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#css3" title="css3">css3</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/jquery/">
-                <h3>
-                    jquery相关注意事项
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#jquery" title="jquery">jquery</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/js/">
-                <h3>
-                    js相关记录
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#javascript" title="javascript">javascript</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/json/">
-                <h3>
-                    有关json的处理
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-05-18</div>
-        <div class="post-info">
-            <a href="/2018/05/18/swiper/">
-                <h3>
-                    swiper在使用中需要注意的问题及解决方式
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#swiper" title="swiper">swiper</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
 </div>
-<ul class="pager">
     
-    
-</ul>
+    <div id="comment-container">
+    </div>
+</div>
 
     </div>
 </div>
@@ -301,5 +185,19 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'About',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
