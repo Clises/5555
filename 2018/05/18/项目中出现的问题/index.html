@@ -11,7 +11,7 @@
 
     <title>
         
-        Tags - charlie的博客 | charlie&#39;s Blog
+        项目中的注意事项 - charlie的博客 | charlie&#39;s Blog
         
     </title>
 
@@ -60,7 +60,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li  class=active >
+            <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -89,6 +89,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#点赞效果"><span class="toc-text">点赞效果</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -112,68 +116,47 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        <div id='tag_cloud' class="tags">
-    
-    <a href="#items" title="items" rel="1">items</a>
-    
-    <a href="#swiper" title="swiper" rel="1">swiper</a>
-    
-    <a href="#前端发展简史" title="前端发展简史" rel="0">前端发展简史</a>
-    
-</div>
-
-<!-- 标签列表 -->
+        
 
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="items">
-                    <span class="tag-text">items</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/05/18/项目中出现的问题/">
-            <h2 class="post-title">
-                项目中的注意事项
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+<div class="post-container">
+    <div class="post-title">
+        项目中的注意事项
     </div>
-    
-</div>
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="swiper">
-                    <span class="tag-text">swiper</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/05/18/swiper插件使用注意点/">
-            <h2 class="post-title">
-                swiper在使用中需要注意的问题及解决方式
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-05-18 03:18:46</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#items" title="items">items</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
     </div>
-    
-</div>
+    <div class="post-content ">
+        <h3 id="点赞效果"><a href="#点赞效果" class="headerlink" title="点赞效果"></a>点赞效果</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"like_count"</span>&gt;</span></span><br><span class="line">    22</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">" like like_img"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">javascript</span><br><span class="line">function userLike()&#123;</span><br><span class="line">        $('body').on('click','.like',function () &#123;</span><br><span class="line">            console.log('aaa')</span><br><span class="line">            var Num=$(this).siblings('.like_count').html()</span><br><span class="line">            if ($(this).is('.like_img'))&#123;</span><br><span class="line">                Num++</span><br><span class="line">                $(this).addClass("nolike_img") .removeClass('like_img')</span><br><span class="line">                $(this).siblings('.like_count').html(Num)</span><br><span class="line">            &#125;else &#123;</span><br><span class="line">                Num--</span><br><span class="line">                $(this).addClass("like_img") .removeClass('nolike_img')</span><br><span class="line">                $(this).siblings('.like_count').html(Num)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>注意事项：<br><br>(1)必须在span上添加like标签，不然会失去效果。<br>(2)如果是诸如addclass removeClass这类的可以不添加类名的前缀，如果是is、siblings等的需要添加前缀，否则会失去效果。</p>
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="前端发展简史">
-                    <span class="tag-text">前端发展简史</span>
-                </span>
-    
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
 </div>
-
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -221,10 +204,24 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '项目中的注意事项',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
