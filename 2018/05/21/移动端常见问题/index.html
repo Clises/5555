@@ -11,7 +11,7 @@
 
     <title>
         
-        Tags - charlie的博客 | charlie&#39;s Blog
+        charlie的博客 | charlie&#39;s Blog
         
     </title>
 
@@ -60,7 +60,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li  class=active >
+            <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -89,6 +89,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、移动端如何定义字体font-family"><span class="toc-text">1、移动端如何定义字体font-family</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -112,82 +116,40 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        <div id='tag_cloud' class="tags">
-    
-    <a href="#meta" title="meta" rel="1">meta</a>
-    
-    <a href="#swiper" title="swiper" rel="1">swiper</a>
-    
-    <a href="#items" title="items" rel="1">items</a>
-    
-</div>
-
-<!-- 标签列表 -->
+        
 
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="meta">
-                    <span class="tag-text">meta</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/05/21/meta基础知识/">
-            <h2 class="post-title">
-                css.md
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+<div class="post-container">
+    <div class="post-title">
+        
     </div>
-    
-</div>
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="swiper">
-                    <span class="tag-text">swiper</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/05/18/swiper插件使用注意点/">
-            <h2 class="post-title">
-                swiper在使用中需要注意的问题及解决方式
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-05-21 23:18:28</span></span>
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
     </div>
-    
-</div>
+    <div class="post-content ">
+        <h2 id="1、移动端如何定义字体font-family"><a href="#1、移动端如何定义字体font-family" class="headerlink" title="1、移动端如何定义字体font-family"></a>1、移动端如何定义字体font-family</h2><p>中文字体使用系统默认即可，英文用Helvetica<br>body{font-family:Helvetica;}</p>
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="items">
-                    <span class="tag-text">items</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/05/18/项目中出现的问题/">
-            <h2 class="post-title">
-                项目中的注意事项
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
     </div>
-    
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
 </div>
-
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -235,10 +197,24 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
